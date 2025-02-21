@@ -8,7 +8,7 @@ import (
 
 func MenuRoutes(incomingRoutes *gin.Engine) {
 
-	incomingRoutes.GET("/menus", controller.GetMenu())
+	incomingRoutes.GET("/menus", controller.GetMenus())
 	incomingRoutes.GET("/menu/:id", controller.GetMenu())
 	incomingRoutes.POST("/menu", controller.CreateMenu())
 	incomingRoutes.PUT("/menu/:id", controller.UpdateMenu())

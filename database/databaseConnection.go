@@ -9,7 +9,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-var ctx = context.TODO()
+var ctx = context.Background()
 
 func DBInstance() *mongo.Client {
 	MongoDB := "mongodb://localhost:27017"
